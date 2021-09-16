@@ -16,6 +16,7 @@ my first web app in django framework
 $ python -m venv /path/to/new/virtual/environment
 ```
 
+- activate virtual environment with `/path/to/new/virtual/environment/Scripts/activate`
 - install packages with
 
 ```
