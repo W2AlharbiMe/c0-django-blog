@@ -10,6 +10,8 @@ from .models import BlogPost
 def blog_post_details_page(request, post_id):
   try:
     blogPosts = BlogPost.objects.get(id=post_id)
+  except ValueError:
+    raise Http404
   except:
     raise Http404
 
