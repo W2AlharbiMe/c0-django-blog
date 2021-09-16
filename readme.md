@@ -23,6 +23,8 @@ $ python -m venv /path/to/new/virtual/environment
 $ pip install -r ./requirements.txt
 ```
 
+- run migrations with `python manage.py migrate`
+
 ## Dashboard setup
 
 - [ ] create superadmin with the following command:
