@@ -1,1 +1,3 @@
-from .page import *
+from .page import (
+  page, _render
+)
