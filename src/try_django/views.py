@@ -1,13 +1,14 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def home_page(request):
-  page_title = 'Home Page'
-  return render(request, 'home.jinja2', {"title": page_title})
+def page(request, name, context={}):
+ return render(request, 'pages/{0}.jinja2'.format(name), context)
 
+def home_page(request):
+  return page(request, 'home')
 
 def about_page(request):
- return HttpResponse("<h1>About Page</h1>")
+ return page(request, 'about')
 
 def contact_page(request):
- return HttpResponse("<h1>Contact Page</h1>")
+ return page(request, 'contact')

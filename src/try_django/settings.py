@@ -59,6 +59,9 @@ TEMPLATES = [
         "DIRS": [os.path.join(BASE_DIR, 'templates')],
         "OPTIONS": {
            "match_extension": ".jinja2",
+           "constants": {
+                "company_name": "ACME2",
+            },
         }
      },
 

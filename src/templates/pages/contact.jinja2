@@ -1,0 +1,25 @@
+{% extends 'base.jinja2' %}
+
+{% block title %}
+  Contact Page |
+{% endblock title %}
+
+{% block content %}
+  <h1>Contact Page</h1>
+
+  <div class="container">
+    <form action="#!" actoin="POST">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+{% endblock content %}
