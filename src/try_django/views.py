@@ -1,8 +1,7 @@
 from django.http import HttpResponse
-from django.shortcuts import render
 
-def page(request, name, context={}):
- return render(request, 'pages/{0}.jinja2'.format(name), context)
+# internal company module
+from acme.helpers import page
 
 def home_page(request):
   languages = ["python", "javascript", "php"]
