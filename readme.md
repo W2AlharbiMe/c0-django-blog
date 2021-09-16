@@ -22,3 +22,13 @@ $ python -m venv /path/to/new/virtual/environment
 ```
 $ pip install -r ./requirements.txt
 ```
+
+## Dashboard setup
+
+- [ ] create superadmin with the following command:
+
+```
+$ python ./src/manage.py createsuperuser
+```
+
+- [ ] visit `http://localhost:8000/dashboard`
