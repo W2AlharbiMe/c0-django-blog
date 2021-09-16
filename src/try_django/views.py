@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def home_page(request):
   page_title = 'Home Page'
-  return render(request, 'home.html', {"title": page_title})
+  return render(request, 'home.jinja2', {"title": page_title})
 
 
 def about_page(request):
