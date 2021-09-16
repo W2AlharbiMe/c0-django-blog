@@ -1,3 +1,6 @@
 *env*
 src/**/*.sqlite3
 .vscode
+
+src/**/*__pycache__*/*
+src/**/*.pyc
