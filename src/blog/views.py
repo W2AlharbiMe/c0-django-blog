@@ -8,7 +8,7 @@ from .models import BlogPost
 
 # /blog/<int:id> ex. http://localhost/blog/1
 def blog_post_details_page(request, post_id):
-  post = get_list_or_404(BlogPost, id=post_id)
+  post = get_object_or_404(BlogPost, id=post_id)
   context = {"post": post}
 
   return _render(request, 'blog_posts.index', context)
