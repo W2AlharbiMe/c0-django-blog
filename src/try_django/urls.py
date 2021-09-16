@@ -27,7 +27,7 @@ from .views import (
 
 urlpatterns = [
     path('', home_page),
-    path('blog/<int:post_id>/', blog_post_details_page),
+    path('blog/<str:slug>/', blog_post_details_page),
     path('about/', about_page),
     path('contact/', contact_page),
     path('dashboard/', admin.site.urls),
