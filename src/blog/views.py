@@ -9,11 +9,7 @@ from .models import BlogPost
 
 # /blog/<int:id> ex. http://localhost/blog/1
 def blog_post_details_page(request, slug):
-  queryset = BlogPost.objects.filter(slug=slug)
-  if queryset.count() > 1:
-    raise Http404
-
-  post = queryset.first()
+  post = get_object_or_404(BlogPost, slug=slug)
   context = {"post": post}
 
   return _render(request, 'blog_posts.index', context)
